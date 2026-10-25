@@ -23,8 +23,6 @@ def _run_out(r: Run) -> dict:
         "started_ns": r.started_ns, "input": r.input, "output": r.output,
         "root_cause_span_id": r.root_cause_span_id,
     }
-
-
 def _span_out(s: Span, t0: int) -> dict:
     return {
         "id": s.id, "parent_id": s.parent_id, "name": s.name, "kind": s.kind, "status": s.status,
